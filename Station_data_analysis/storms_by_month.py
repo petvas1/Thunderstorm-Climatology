@@ -8,7 +8,7 @@ from scipy.stats import linregress
 
 
 def main():
-    storms_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+    storms_data_path = "burky_javy.xlsx"
     df_storm_station = pd.read_excel(storms_data_path, sheet_name=0)
     df_storm_station = df_storm_station[df_storm_station['rok'] >= 1965]
     # prof_stations = [11813, 11816, 11826, 11858, 11868, 11903, 11930, 11933, 11934, 11938, 11968, 11993]
@@ -91,7 +91,6 @@ def main():
     # plt.ylabel('number of TDs')
     # # plt.title('Počet búrkových dní v ročných obdobiach')
     # plt.ylim([-0.5, 15])
-    # plt.savefig(r"C:\Users\petva\Desktop\FMFI UK\Clanok - Klimatologia burok SR\Obrazky\Figure 6.jpeg", dpi=1000)
     # # plt.show()
 ###################################################
 
@@ -128,12 +127,11 @@ def main():
     # # ax.yaxis.grid(True, which='both', linestyle='--', linewidth=0.7, color='gray')
     # plt.legend(edgecolor='k', fontsize=13)
     #
-    # plt.savefig(r"C:\Users\petva\Desktop\FMFI UK\Clanok - Klimatologia burok SR\Obrazky\Figure 7a.jpeg", dpi=1000)
     # # plt.show()
 
     ########### plot pre mesiace a blesky spolu ##############
     # bar_width = 0.4
-    # blesky_pocet = np.loadtxt('C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Radary_python\\blesky_mesiace_stat.txt')
+    # blesky_pocet = np.loadtxt('blesky_mesiace_stat.txt')
     #
     # fig, ax1 = plt.subplots()
     # spacing = 0.21
@@ -149,7 +147,6 @@ def main():
     #
     # plt.xticks(months, mesiace_labels)
     # plt.tight_layout()
-    # # plt.savefig("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_spolu\\Búrkové dni a blesky v mesiacoch.png", dpi=500)
     # plt.show()
 
 
