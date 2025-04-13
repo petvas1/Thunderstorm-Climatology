@@ -5,7 +5,7 @@ import scienceplots
 
 
 def main():
-    blesky_dir_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Blesky_5min_synopt\\"
+    blesky_dir_path = "Blesky_5min_synopt\\"
 
 ################ daily lightning distributions (5 minute time window) ################
     hours_values = np.zeros(12*24)  # every 5 minutes
@@ -61,7 +61,7 @@ def main():
     # ax.xaxis.set_ticks_position('none')
     # ax.xaxis.grid(False)
     # plt.ylabel(r'lightning strikes $\mathregular{km^{-2}}$ $\mathregular{yr^{-1}}$')
-    # plt.savefig(r"C:\Users\petva\Desktop\FMFI UK\Clanok - Klimatologia burok SR\Obrazky\Figure 7b.jpeg", dpi=1000)
+    # plt.savefig(r"Figure 7b.jpeg", dpi=1000)
 
 
 if __name__ == '__main__':
