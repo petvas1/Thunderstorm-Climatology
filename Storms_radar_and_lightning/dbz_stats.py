@@ -9,11 +9,7 @@ import scienceplots
 def process():
     radar_dir_path = "20230923"
     blesky_dir_path = 'blesky_zoznam_20230923'
-    dbz_palette_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Radary\\dbz_palette.txt"
-
-    # radar_dir_path = "/mnt/Qnas/Vas/Radar"
-    # blesky_dir_path = "/home/vas/Blesky_5min"
-    # dbz_palette_path = '/mnt/Qnas/Vas/dbz_palette.txt'
+    dbz_palette_path = "dbz_palette.txt"
 
     distance_radius = 3  # in km (of storm)
     radius = int(distance_radius * 1.5)  # in pixels
