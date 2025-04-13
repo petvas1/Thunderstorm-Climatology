@@ -9,8 +9,8 @@ import earthpy.plot as ep
 import rioxarray as rxr
 
 
-file_name_old = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\radar_dbz_30_old.txt"
-file_name_new = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\radar_dbz_30_new.txt"
+file_name_old = "radar_dbz_30_old.txt"
+file_name_new = "radar_dbz_30_new.txt"
 with open(file_name_old, 'r') as fin:
     grid_old = np.array([line.split() for line in fin], dtype=np.int64)
 with open(file_name_new, 'r') as fin:
@@ -33,12 +33,8 @@ pixel_x /= 2
 pixel_y /= 2
 
 
-mapa_sr_kraje = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
 fig, ax = plt.subplots()
-
-# file_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\GIS\\Uloha4\\Hillshade_SR.tif"
-# hillshade = rxr.open_rasterio(file_path, masked=True)
-# ep.plot_bands(hillshade, cmap='Greys', alpha=1, ax=ax, cbar=False, extent=[16.8, 22.5, 47.7, 49.7])
 
 X, Y = np.meshgrid(np.linspace(x_0, x_0 + (x2 - x1) * pixel_x, x2 - x1),
                    np.linspace(y_0, y_0 - (y2 - y1) * pixel_y, y2 - y1))
@@ -53,7 +49,7 @@ plt.savefig('Radary_ciste_30dbz.png', dpi=300)
 plt.show()
 
 
-# radary_path = "C:\\MOJE\\Radary"
+# radary_path = "Radary"
 #
 # for root, dirs, files in os.walk(radary_path):
 #     for f in files:
