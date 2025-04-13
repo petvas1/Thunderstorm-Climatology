@@ -13,8 +13,8 @@ def main():
 
     situations_per_year = {'A': 0.25, 'Ap1': 1.9166666666666667, 'Ap2': 1.1666666666666667, 'Ap3': 0.4166666666666667, 'Ap4': 0.0001, 'B': 14.583333333333334, 'Bp': 13.5, 'C': 2.6666666666666665, 'Cv': 2.5833333333333335, 'Ea': 2.5, 'Ec': 2.9166666666666665, 'NEa': 1.9166666666666667, 'NEc': 5.666666666666667, 'NWa': 1.5833333333333333, 'NWc': 4.083333333333333, 'Nc': 2.0833333333333335, 'SEa': 1.1666666666666667, 'SEc': 1.8333333333333333, 'SWa': 3.0, 'SWc1': 4.083333333333333, 'SWc2': 3.5, 'SWc3': 0.5, 'Sa': 2.5, 'Vfz': 0.75, 'Wa': 0.75, 'Wal': 4.666666666666667, 'Wc': 4.666666666666667, 'Wcs': 1.8333333333333333}
 
-    situations_array_dir = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\km_10_dbz_30\\Situacie_matice_13_rokov\\"
-    mapa_sr_kraje = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+    situations_array_dir = "Situacie_matice_13_rokov\\"
+    mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
     situacie = situations_per_year.keys()
 
     # some constants
