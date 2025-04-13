@@ -12,8 +12,8 @@ from scipy import ndimage
 def process_syn_sit(syn_sit):
     start_time = time.perf_counter()
 
-    radar_dir_path = "/mnt/Qnas/Vas/Radar"
-    blesky_dir_path = "/home/vas/Blesky_5min_synopt/" + syn_sit
+    radar_dir_path = "Radar"
+    blesky_dir_path = "Blesky_5min_synopt/" + syn_sit
 
     # go through all lightnings (files)
     lightning_names_old = []  # change of pixels old(1135x780) -> new(2270x1560), last old image 20160812.1215
@@ -96,7 +96,7 @@ def process_syn_sit(syn_sit):
 
     print(f'time({syn_sit}) =', time.perf_counter() - start_time)
 
-    # mapa_sr_kraje = gpd.read_file("/mnt/Qnas/Vas/Mapy_krajin/mapa_sr_kraje.csv")
+    # mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
     # fig, ax = plt.subplots()
     # X, Y = np.meshgrid(np.linspace(x_0, x_0 + (x2 - x1) * pixel_x, x2 - x1),
     #                    np.linspace(y_0, y_0 - (y2 - y1) * pixel_y, y2 - y1))
@@ -107,13 +107,13 @@ def process_syn_sit(syn_sit):
     # plt.title(f'Situácia {syn_sit}', fontsize=20)
     # ax.xaxis.set_major_formatter(StrMethodFormatter(u"{x:.0f}°"))
     # ax.yaxis.set_major_formatter(StrMethodFormatter(u"{x:.1f}°"))
-    # plt.savefig(f"/home/vas/Vysledky/{syn_sit}.png", dpi=400)
+    # plt.savefig(f"Vysledky/{syn_sit}.png", dpi=400)
     # plt.show()
-    np.savetxt(f"/home/vas/Vysledky/Np_arrays/{syn_sit}.txt", grid)
+    np.savetxt(f"Vysledky/Np_arrays/{syn_sit}.txt", grid)
 
 
 def main():
-    synopt_root_path = "/home/vas/Blesky_5min_synopt"
+    synopt_root_path = "Blesky_5min_synopt"
     situacie = []
     for root, dirs, files in os.walk(synopt_root_path):
         for dir_ in dirs:
