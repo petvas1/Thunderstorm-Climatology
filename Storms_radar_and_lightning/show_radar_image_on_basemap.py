@@ -16,7 +16,7 @@ pixel_y = 0.006  # size of pixel in degrees of latitude
 image = image[y1:y2, x1:x2]
 image_borders = [x_0, x_0 + (x2 - x1) * pixel_x, y_0 - (y2 - y1) * pixel_y, y_0]
 
-map_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv"
+map_path = "mapa_sr_kraje.csv"
 mapa_sr_kraje = gpd.read_file(map_path)
 fig, ax = plt.subplots()
 mapa_sr_kraje.plot(ax=ax, color=(0, 0, 0, 0), edgecolor='k')
