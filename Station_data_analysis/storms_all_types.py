@@ -8,7 +8,7 @@ from scipy.stats import linregress
 
 
 # storms by year, all types
-burky_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+burky_data_path = "burky_javy.xlsx"
 burka_stanica = pd.read_excel(burky_data_path, sheet_name=0)
 burka_vzdialena = pd.read_excel(burky_data_path, sheet_name=1)
 blyskavica = pd.read_excel(burky_data_path, sheet_name=2)
