@@ -6,7 +6,7 @@ import scienceplots
 from collections import Counter
 
 
-burky_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+burky_data_path = "burky_javy.xlsx"
 df_burka_stanica = pd.read_excel(burky_data_path, sheet_name=0)
 # df_burka_vzdialena = pd.read_excel(burky_data_path, sheet_name=1)
 # df_blyskavica = pd.read_excel(burky_data_path, sheet_name=2)
