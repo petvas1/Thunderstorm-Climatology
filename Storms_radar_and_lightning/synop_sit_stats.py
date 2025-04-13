@@ -9,8 +9,8 @@ from scipy.stats import linregress
 
 
 def main():
-    syn_sit_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\syn_sit_all.xlsx"
-    burky_na_stanici_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+    syn_sit_path = "syn_sit_all.xlsx"
+    burky_na_stanici_path = "burky_javy.xlsx"
     df_situacie = pd.read_excel(syn_sit_path)
     df_burky = pd.read_excel(burky_na_stanici_path)
     df_burky.drop_duplicates(subset=['rok', 'mesiac', 'den'], inplace=True)
