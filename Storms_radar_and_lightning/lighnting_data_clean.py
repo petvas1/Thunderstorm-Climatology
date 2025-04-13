@@ -10,7 +10,7 @@ import datetime
 #             os.remove(fullname)
 
 # write contents from every file to 1 file
-blesky_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Radary\\Blesky sample\\20230923"
+blesky_path = "20230923"
 blesky_total_file = 'blesky_zoznam_komplet.txt'
 
 # with open(blesky_total_file, 'w') as file_w:
