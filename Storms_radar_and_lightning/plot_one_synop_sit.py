@@ -12,8 +12,8 @@ def main():
     start = time.perf_counter()
 
     sit = 'SWc3'
-    situation_array_dir = f"C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\km_10_dbz_30\\Situacie_matice_13_rokov\\{sit}.txt"
-    mapa_sr_kraje = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+    situation_array_dir = f"Situacie_matice_13_rokov\\{sit}.txt"
+    mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
     with open(situation_array_dir, 'r') as fin:
         grid = np.array([line.split() for line in fin], dtype='float64')
 
