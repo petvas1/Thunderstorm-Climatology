@@ -12,8 +12,8 @@ from scipy import ndimage
 def process_all():
     start_time = time.perf_counter()
 
-    radar_dir_path = "/mnt/Qnas/Vas/Radar"
-    blesky_dir_path = "/home/vas/Blesky_5min"
+    radar_dir_path = "Radar"
+    blesky_dir_path = "Blesky_5min"
 
     # go through all lightnings (files)
     lightning_names_old = []  # change of pixels old(1135x780) -> new(2270x1560), last old image 20160812.1215
@@ -97,7 +97,7 @@ def process_all():
 
     print('time =', time.perf_counter() - start_time)
 
-    mapa_sr_kraje = gpd.read_file("/mnt/Qnas/Vas/Mapy_krajin/mapa_sr_kraje.csv")
+    mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
     fig, ax = plt.subplots()
     X, Y = np.meshgrid(np.linspace(x_0, x_0 + (x2 - x1) * pixel_x, x2 - x1),
                        np.linspace(y_0, y_0 - (y2 - y1) * pixel_y, y2 - y1))
