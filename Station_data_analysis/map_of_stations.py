@@ -8,13 +8,13 @@ from shapely.geometry import Point
 from collections import Counter
 
 
-df_stanice = pd.read_excel("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\shmu_stanice_surad.xlsx")
-burky_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+df_stanice = pd.read_excel("stanice_surad.xlsx")
+burky_data_path = "burky_javy.xlsx"
 df_burka_stanica = pd.read_excel(burky_data_path, sheet_name=0)
-# europe_countries = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\data\\mapy krajin\\europe.geojson")
-# mapa_sr = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\data\\mapy krajin\\mapa_sr.csv")
-mapa_sr_kraje = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
-# mapa_sr_okresy = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\data\\mapy krajin\\mapa_sr_okresy.csv")
+# europe_countries = gpd.read_file("europe.geojson")
+# mapa_sr = gpd.read_file("mapa_sr.csv")
+mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
+# mapa_sr_okresy = gpd.read_file("mapa_sr_okresy.csv")
 
 #################################
 # rozdelenie podla krajov
