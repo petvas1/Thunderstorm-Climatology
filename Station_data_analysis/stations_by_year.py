@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import scienceplots
 from collections import Counter
 
-burky_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+burky_data_path = "burky_javy.xlsx"
 df_burka_stanica = pd.read_excel(burky_data_path, sheet_name=0)
 
 pocet_burok_roky_s = dict(Counter(df_burka_stanica['rok'].values))
