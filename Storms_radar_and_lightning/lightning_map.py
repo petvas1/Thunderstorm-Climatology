@@ -9,7 +9,7 @@ from scipy import ndimage
 
 
 def main():
-    blesky_dir_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Blesky_5min_synopt\\"
+    blesky_dir_path = "Blesky_5min_synopt\\"
 
     x_borders = [16, 23]
     y_borders = [47.3, 49.9]
@@ -38,8 +38,7 @@ def main():
     grid = np.loadtxt("grid_blesky.txt")
     grid[grid > 25] = 25
     print(np.mean(grid))
-    mapa_sr_kraje = gpd.read_file(
-        "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+    mapa_sr_kraje = gpd.read_file(mapa_sr_kraje.csv")
 
     fig, ax = plt.subplots()
     X, Y = np.meshgrid(np.linspace(x_borders[0], x_borders[1], x_length_km),
