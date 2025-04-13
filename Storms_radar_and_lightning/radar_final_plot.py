@@ -7,8 +7,8 @@ from scipy import ndimage
 
 
 def main():
-    synopt_arrays_dir = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\km_10_dbz_30\\Situacie_matice_13_rokov"
-    mapa_sr_kraje = gpd.read_file("C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+    synopt_arrays_dir = "Situacie_matice_13_rokov"
+    mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
 
     # some constants
     y1, y2 = (135, 573)  # coords of rectangle in pixels (columns)
