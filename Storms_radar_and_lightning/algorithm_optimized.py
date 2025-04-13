@@ -94,8 +94,7 @@ def main():
 
     print('time =', time.perf_counter() - start_time)  # 23 sec for entire day
 
-    mapa_sr_kraje = gpd.read_file(
-        "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
+    mapa_sr_kraje = gpd.read_file(mapa_sr_kraje.csv")
 
     fig, ax = plt.subplots()
     X, Y = np.meshgrid(np.linspace(x_0, x_0 + (x2 - x1) * pixel_x, x2 - x1),
