@@ -6,7 +6,7 @@ import scienceplots
 from collections import Counter
 from scipy.stats import linregress
 
-burky_data_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Burkove dni - javy\\burky_javy.xlsx"
+burky_data_path = "burky_javy.xlsx"
 burka_stanica = pd.read_excel(burky_data_path, sheet_name=0)
 burka_stanica = burka_stanica[burka_stanica['rok'] >= 1965]
 
