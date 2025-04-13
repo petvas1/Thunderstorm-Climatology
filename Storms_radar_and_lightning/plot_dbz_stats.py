@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    dbz_path_10km = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\dbz_statistika_10_km.txt"
-    dbz_path_3km = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Vysledky_matice\\dbz_statistika_3_km.txt"
+    dbz_path_10km = "dbz_statistika_10_km.txt"
+    dbz_path_3km = "dbz_statistika_3_km.txt"
 
     x10 = []
     y10 = []
