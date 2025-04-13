@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 import scienceplots
 
-blesky_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Blesky_5min_synopt\\"
+blesky_path = "Blesky_5min_synopt\\"
 # years = np.zeros([14])
 # burkove_dni = set()
 # for root, dirs, files in os.walk(blesky_path):
