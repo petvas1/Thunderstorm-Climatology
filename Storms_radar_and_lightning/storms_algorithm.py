@@ -7,8 +7,8 @@ import geopandas as gpd
 
 old_radar_image = False  # change of pixels old(1135x780) -> new(2270x1560), last old image 20160812.1215
 
-radar_dir_path = "/mnt/Qnas/Vas/Radar"
-blesky_dir_path = "/home/vas/Blesky_5min"
+radar_dir_path = "Radar"
+blesky_dir_path = "Blesky_5min"
 
 distance_radius = 10  # in km (of storm)
 radius = distance_radius * 1.5  # in pixels
@@ -83,7 +83,7 @@ for root, dirs, files in os.walk(blesky_dir_path):
 
 print('time =', time.time() - start_time)  # 1620 sec for entire day
 
-mapa_sr_kraje = gpd.read_file("/mnt/Qnas/Vas/Mapy_krajin/mapa_sr_kraje.csv")
+mapa_sr_kraje = gpd.read_file("mapa_sr_kraje.csv")
 
 fig, ax = plt.subplots()
 X, Y = np.meshgrid(np.linspace(x_0, x_0 + (x2-x1)*pixel_x, x2-x1), np.linspace(y_0, y_0 - (y2-y1)*pixel_y, y2-y1))
