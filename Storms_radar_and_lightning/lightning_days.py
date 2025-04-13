@@ -9,8 +9,8 @@ from collections import defaultdict
 
 
 def main():
-    blesky_dir_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Blesky_5min_synopt\\"
-    blesky_dni_dir_path = "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Blesky_dni\\"
+    blesky_dir_path = "Blesky_5min_synopt\\"
+    blesky_dni_dir_path = "Blesky_dni\\"
 ################ create files of lightning days ############
     # def merge_files_by_date(input_dir, output_dir):
     #     # Create the output directory if it doesn't exist
@@ -67,26 +67,6 @@ def main():
                 grid[y, x] += 1
 
     grid /= 13  # norm to 1 year
-
-    ### removing weird values
-    # Specify the range and the base value
-    row_start, row_end = 40, 46
-    col_start, col_end = 80, 87
-    base_value = np.mean(grid)
-    print(np.mean(grid))
-    lower_percentage = 0.80  # 80% of the base value
-    upper_percentage = 1.20  # 120% of the base value
-    # Calculate the lower and upper bounds for the random values
-    lower_bound = base_value * lower_percentage
-    upper_bound = base_value * upper_percentage
-    # Generate random values within the specified range
-    random_values = np.random.uniform(lower_bound, upper_bound, (row_end - row_start, col_end - col_start))
-    grid[row_start:row_end, col_start:col_end] = random_values
-    # edges
-    grid[57:59, :] = 0.8*base_value
-    grid[:, 103:105] = 0.8*base_value
-    mapa_sr_kraje = gpd.read_file(
-        "C:\\Users\\petva\\Desktop\\FMFI UK\\3. rocnik\\bakalarka\\Mapy krajin\\mapa_sr_kraje.csv")
 
     fig, ax = plt.subplots()
     X, Y = np.meshgrid(np.linspace(x_borders[0], x_borders[1], x_length_km),
