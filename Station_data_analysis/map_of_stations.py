@@ -55,7 +55,7 @@ for i in range(len(stredy_krajov)):
 # ax.set_xticks(np.arange(17, 23, 0.5))
 # ax.xaxis.set_major_formatter(StrMethodFormatter(u"{x:.1f}°"))
 # ax.yaxis.set_major_formatter(StrMethodFormatter(u"{x:.2f}°"))
-hillsade = plt.imread("C:\\Users\\petva\\Downloads\\imagesr.png")
+hillsade = plt.imread("imagesr.png")
 hraniceSR = [16.8327, 22.566, 47.732, 49.614]
 plt.imshow(hillsade, alpha=0.5, extent=hraniceSR)
 
